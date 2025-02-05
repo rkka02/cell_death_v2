@@ -10,7 +10,7 @@ __pycache__/
 /cell_death_v1/confusion_pathway_0.8952_mip.png
 /cell_death_v1/analysis.txt
 /cell_death_v1/probability_json
-
+/cell_death_v1/legacy_codes/v1.1/3d_data_video.avi
 
 # C extensions
 *.so

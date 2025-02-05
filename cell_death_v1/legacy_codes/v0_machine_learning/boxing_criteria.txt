@@ -1,0 +1,134 @@
+1. Apoptosis
+
+    focal plane : 27~33
+
+    start_layer = 27
+    end_layer = 32 + 1
+
+    file_list = ['compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P12.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P15.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P19.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P20.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P26.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P28.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P29.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P34.TCF',
+                'compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P35.TCF'
+                ]
+    area_threshold_list = [10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000]
+
+
+mode = 'Apoptosis'
+directory = 'C:/rkka_Projects/Cell/Data/' + mode + '/'
+
+file_list = ['timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P12.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P15.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P19.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P20.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P26.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P28.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P29.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P34.TCF.h5',
+                'timelapsed_boxed_compressed_230512.160429.CD95_TNF_Ctr.003.CD95.A1.T001P35.TCF.h5'
+            ]
+
+2. Necrosis
+
+    focal plane : 33~39
+
+    start_layer = 33
+    end_layer = 38+1
+
+    file_list = ['230721.132040.Necrosis_NaOH.001.Group1.A1.T001P01.TCF',
+                 '230725.092931.HeLa_NaOH.002.Group1.A1.T002P01.TCF',
+                 '230725.094439.HeLa_NaOH.002.Group1.A1.T002P01.TCF',
+                 '230725.095615.HeLa_NaOH.003.Group1.A1.T003P01.TCF',
+                 '230725.100700.HeLa_NaOH.004.Group1.A1.T004P01.TCF',
+                 '230725.102033.HeLa_NaOH.005.Group1.A1.T005P01.TCF'
+                ]
+    area_threshold_list = [10000, 10000, 10000, 10000, 10000, 10000]
+
+mode = 'Necrosis'
+directory = 'C:/rkka_Projects/Cell/Data/' + mode + '/'
+
+file_list = ['timelapsed_boxed_230721.132040.Necrosis_NaOH.001.Group1.A1.T001P01.TCF.h5',
+                'timelapsed_boxed_230725.092931.HeLa_NaOH.002.Group1.A1.T002P01.TCF.h5',
+                'timelapsed_boxed_230725.094439.HeLa_NaOH.002.Group1.A1.T002P01.TCF.h5',
+                'timelapsed_boxed_230725.095615.HeLa_NaOH.003.Group1.A1.T003P01.TCF.h5',
+                'timelapsed_boxed_230725.100700.HeLa_NaOH.004.Group1.A1.T004P01.TCF.h5',
+                'timelapsed_boxed_230725.102033.HeLa_NaOH.005.Group1.A1.T005P01.TCF.h5',
+            ]
+
+3. Necroptosis
+
+    focal_plane : 28~34
+
+    start_layer = 28
+    end_layer = 33 + 1
+
+    file_list = ['compressed_230510.174730.HeLa_Hoechst.001.Group1.A2.T001P02.TCF',
+                'compressed_230510.174730.HeLa_Hoechst.001.Group1.A2.T001P03.TCF',
+                'compressed_230510.174730.HeLa_Hoechst.001.Group1.A2.T001P17.TCF',
+                'compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P02.TCF',
+                'compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P10.TCF',
+                'compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P19.TCF',
+                'compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P20.TCF'
+                ]
+    area_threshold_list = [30000, 20000, 20000, 20000, 10000, 20000, 20000]
+
+mode = 'Necroptosis'
+directory = 'C:/rkka_Projects/Cell/Data/' + mode + '/'
+
+
+file_list = ['timelapsed_boxed_compressed_230510.174730.HeLa_Hoechst.001.Group1.A2.T001P02.TCF.h5',
+             'timelapsed_boxed_compressed_230510.174730.HeLa_Hoechst.001.Group1.A2.T001P03.TCF.h5',
+             'timelapsed_boxed_compressed_230510.174730.HeLa_Hoechst.001.Group1.A2.T001P17.TCF.h5',
+             'timelapsed_boxed_compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P02.TCF.h5',
+             'timelapsed_boxed_compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P10.TCF.h5',
+             'timelapsed_boxed_compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P19.TCF.h5',
+             'timelapsed_boxed_compressed_230510.174730.HeLa_Hoechst.001.Group2.A1.T001P20.TCF.h5'
+            ]
+
+
+02 filter : 
+
+mask = np.zeros(a[start_layer:end_layer].shape)
+mask = mask + a[start_layer:end_layer]
+thr = filters.threshold_multiotsu(mask, 4)
+mask[mask<thr[1]] = 0
+
+mask = filters.gaussian(mask)
+cutoff = 1/10
+
+for i in tqdm(range(mask.shape[0])):
+    a_fourier = np.fft.fftshift(np.fft.fft2(mask[i]))
+    H, W = a_fourier.shape
+    a_fourier[H//2:H//2 + 1, W//2:W//2 + 1]=0
+    a_fourier[0:int(H*cutoff), :] = 0
+    a_fourier[H-int(H*cutoff):-1, :] = 0
+    a_fourier[:, 0:int(W*cutoff)] = 0
+    a_fourier[:, W-int(W*cutoff):-1] = 0
+    a_mod = np.fft.ifft2(a_fourier)
+    a_mod = np.abs(a_mod)
+
+    # 푸리에 필터 적용한거에 다시 threshold 걸어주기
+    thr = filters.threshold_multiotsu(a_mod, 4)
+    a_mod[a_mod<thr[0]] = 0
+
+    # gaussian 적용후 sobel 걸어주면 좀 더 잘됨
+    # a_mod = filters.gaussian(a_mod)
+    a_mod = filters.sobel(a_mod)
+    a_mod = morphology.area_closing(a_mod, area_threshold=10000)
+
+    # 다시 background 제거
+    a_mod_thr = filters.threshold_multiotsu(a_mod, 3)
+    a_mod[a_mod<a_mod_thr[0]] = 0
+    a_mod = morphology.area_closing(a_mod, area_threshold=50000)
+
+    mask[i] = a_mod
+
+mask = mask.astype(bool)
+
+aa = np.zeros(a[start_layer:end_layer].shape)
+aa = aa + a[start_layer:end_layer]
+aa[mask==0] = 0

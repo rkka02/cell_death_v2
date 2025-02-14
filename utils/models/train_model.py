@@ -3,7 +3,7 @@ from tqdm import tqdm
 import datetime
 
 def train_model(model, train_loader, val_loader, criterion, optimizer, 
-                num_epochs:int=20, save_model:bool=False):
+                num_epochs:int=20, save_model:bool=False, save_name='default'):
     # Train
     num_epochs = num_epochs
 
@@ -45,7 +45,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer,
 
         # Save model if save_model==True
         if save_model==True:        
-            torch.save(model.state_dict(), f'epoch_{epoch}_3d_val_acc_{val_correct/val_total:.4f}.pth') 
+            torch.save(model.state_dict(), f'epoch_{epoch}_{save_name}_val_acc_{val_correct/val_total:.4f}.pth') 
               
         print(f"Epoch : {epoch}")
         print(f"train loss : {train_loss/train_total:.6f} || train_acc : {train_correct/train_total:.4f}")

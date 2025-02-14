@@ -11,11 +11,18 @@ __pycache__/
 /cell_death_v1/analysis.txt
 /cell_death_v1/probability_json
 /cell_death_v1/legacy_codes/v1.1/3d_data_video.avi
+/0510_ligand_results
+/0512_ligand_results
+/trained_models
+
 
 # C extensions
 *.so
 *.pth
 *.tif
+*.npz
+*.json
+*.xlsx
 
 # Distribution / packaging
 .Python

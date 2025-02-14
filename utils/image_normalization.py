@@ -8,11 +8,20 @@ def image_normalization(image, min=None, max=None):
             image = np.zeros_like(image, dtype=np.uint8)
         else:
             image = ((image - min_val) / (max_val - min_val) * 255).astype(np.uint8)
+            
+        image[image>255] = 255
+        image[image<0] = 0
+        
     else:
         min_val, max_val = min, max
+        image[image>max] = max
+        image[image<min] = min
         if max_val - min_val < 1e-10:
             image = np.zeros_like(image, dtype=np.uint8)
         else:
             image = ((image - min_val) / (max_val - min_val) * 255).astype(np.uint8)
+            
+        image[image>255] = 255
+        image[image<0] = 0
         
     return image
